@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ZipCodesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/zip-codes/{zipCode}', [ZipCodesController::class,'getZipCode'])
+    ->name("api.zip-codes")
+    ->where([
+        'zipCode' => '^[0-9]{1,5}$'
+    ]);
