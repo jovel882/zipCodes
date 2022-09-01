@@ -12,8 +12,10 @@ class ZipCodeSeeder extends Seeder
      */
     public function run()
     {
-        ZipCode::factory()
-            ->count(50)
-            ->create();
+        DatabaseSeeder::loadData(ZipCode::class, 'database/seeders/jsonData/zip_codes.json');
+
+        // ZipCode::factory()
+        //     ->count(50)
+        //     ->create();
     }
 }

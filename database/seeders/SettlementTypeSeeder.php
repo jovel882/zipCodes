@@ -12,8 +12,10 @@ class SettlementTypeSeeder extends Seeder
      */
     public function run()
     {
-        SettlementType::factory()
-            ->count(50)
-            ->create();
+        DatabaseSeeder::loadData(SettlementType::class, 'database/seeders/jsonData/settlement_types.json');
+
+        // SettlementType::factory()
+        //     ->count(50)
+        //     ->create();
     }
 }

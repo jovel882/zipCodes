@@ -12,8 +12,10 @@ class FederalEntitySeeder extends Seeder
      */
     public function run()
     {
-        FederalEntity::factory()
-            ->count(50)
-            ->create();
+        DatabaseSeeder::loadData(FederalEntity::class, 'database/seeders/jsonData/federal_entities.json');
+
+        // FederalEntity::factory()
+        //     ->count(50)
+        //     ->create();
     }
 }
