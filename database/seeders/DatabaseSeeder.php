@@ -31,23 +31,24 @@ class DatabaseSeeder extends Seeder
     public static function loadData($model, string $file)
     {
         $rowsInsert = [];
-        $rowData = [];
+        $textJson = '';
         foreach (self::readFile($file) as $line) {
-            if (preg_match('/^.*\}.*$/', $line)) {
+            if (preg_match('/.*\{(\r\n|\r|\n){1}$/', $line)) {
+                $textJson = null;
+                unset($textJson);
+                $textJson = '';
+            }
+            if (preg_match('/.*\}\,?(\r\n|\r|\n){1}$/', $line)) {
+                $textJson .= '}';
                 if (count($rowsInsert) === 100) {
                     $model::insert($rowsInsert);
                     $rowsInsert = null;
                     unset($rowsInsert);
                     $rowsInsert = [];
                 }
-                array_push($rowsInsert, $rowData);
-                $rowData = null;
-                unset($rowData);
-                $rowData = [];
-            }
-
-            if (preg_match('/^.*\"(.*)\"\:\ \"?([^\"\,\\n]*)(\"\,|\n)?.*$/', $line, $data)) {
-                $rowData[$data[1]] = $data[2] === 'null' ? null : $data[2];
+                array_push($rowsInsert, json_decode($textJson, true));
+            } else {
+                $textJson .= $line;
             }
         }
 

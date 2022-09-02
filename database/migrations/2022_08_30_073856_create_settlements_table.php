@@ -31,7 +31,7 @@ return new class extends Migration
                 ->onUpdate('cascade')            
                 ->onDelete('cascade');            
         });
-        \DB::statement("ALTER TABLE `settlements` ADD `key` SMALLINT(4) NOT NULL AFTER `id`");
+        \DB::statement("ALTER TABLE `settlements` ADD `key` SMALLINT(4) NOT NULL " . ((app()->env != "testing") ? 'AFTER `id`' : ''));
     }
 
     /**

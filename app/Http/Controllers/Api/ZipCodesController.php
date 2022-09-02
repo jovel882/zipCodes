@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ZipCodesController extends Controller
 {
-    public function getZipCode(int $zipCode, Request $request)
+    public function getZipCode(string $zipCode, Request $request)
     {
         $dataZipCode = ZipCode::with(['federal_entity:key,name,code,id', 'settlements.settlement_type', 'municipality:key,name,id'])
             ->whereZipCode($zipCode)

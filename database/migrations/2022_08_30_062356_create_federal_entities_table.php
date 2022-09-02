@@ -20,7 +20,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        \DB::statement("ALTER TABLE `federal_entities` ADD `key` TINYINT(2) NOT NULL AFTER `id`");
+        \DB::statement("ALTER TABLE `federal_entities` ADD `key` TINYINT(2) NOT NULL " . ((app()->env != "testing") ? 'AFTER `id`' : ''));
     }
 
     /**
