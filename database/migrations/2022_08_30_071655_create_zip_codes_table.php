@@ -20,6 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('federal_entity_id');
             $table->unsignedBigInteger('municipality_id');
             $table->timestamps();
+            $table->index('zip_code');
             $table->index('federal_entity_id');
             $table->index('municipality_id');
             $table->foreign('federal_entity_id')

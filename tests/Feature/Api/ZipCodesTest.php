@@ -18,37 +18,42 @@ class ZipCodesTest extends TestCase
 
     protected $settlementModelTest = false;
 
+    private $settlementDataTest;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->settlementDataTest = json_decode(self::SETTLEMENTDATATEST, true);
+    }
+
     public function testCanGetZipCode()
     {
         $this->getSettlementTest();
 
-        $json = json_decode(self::SETTLEMENTDATATEST, true);
-
         $response = $this->getJson(route('api.zip-codes', [
-            'zipCode' => $json['zip_code'],
+            'zipCode' => $this->settlementDataTest['zip_code'],
         ]));
 
         $response
             ->assertStatus(200)
-            ->assertExactJson($json);
+            ->assertExactJson($this->settlementDataTest);
     }
 
     private function getSettlementTest()
     {
         if (! $this->settlementModelTest) {
-            $json = json_decode(self::SETTLEMENTDATATEST, true);
-
             $this->settlementModelTest = Settlement::create([
-                'key' => $json['settlements'][0]['key'],
-                'name' => $json['settlements'][0]['name'],
-                'zone_type' => $json['settlements'][0]['zone_type'],
+                'key' => $this->settlementDataTest['settlements'][0]['key'],
+                'name' => $this->settlementDataTest['settlements'][0]['name'],
+                'zone_type' => $this->settlementDataTest['settlements'][0]['zone_type'],
                 'zip_code_id' => ZipCode::create([
-                    'zip_code' => $json['zip_code'],
-                    'locality' => $json['locality'],
-                    'federal_entity_id' => FederalEntity::create($json['federal_entity'])->id,
-                    'municipality_id' => Municipality::create($json['municipality'])->id,
+                    'zip_code' => $this->settlementDataTest['zip_code'],
+                    'locality' => $this->settlementDataTest['locality'],
+                    'federal_entity_id' => FederalEntity::create($this->settlementDataTest['federal_entity'])->id,
+                    'municipality_id' => Municipality::create($this->settlementDataTest['municipality'])->id,
                 ])->id,
-                'settlement_type_id' => SettlementType::create($json['settlements'][0]['settlement_type'])->id,
+                'settlement_type_id' => SettlementType::create($this->settlementDataTest['settlements'][0]['settlement_type'])->id,
             ]);
         }
 
