@@ -1,8 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ZipCodesController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +14,8 @@ use App\Http\Controllers\Api\ZipCodesController;
 |
 */
 
-Route::get('/zip-codes/{zipCode}', [ZipCodesController::class,'getZipCode'])
-    ->name("api.zip-codes")
+Route::get('/zip-codes/{zipCode}', [ZipCodesController::class, 'getZipCode'])
+    ->name('api.zip-codes')
     ->where([
-        'zipCode' => '^[0-9]{1,5}$'
+        'zipCode' => '^[0-9]{1,5}$',
     ]);

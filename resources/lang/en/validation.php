@@ -160,4 +160,6 @@ return [
 
     'attributes' => [],
 
+    'errors' => 'The following error is generated.|The following errors were generated.',
+    '404' => 'Resource not found.',
 ];

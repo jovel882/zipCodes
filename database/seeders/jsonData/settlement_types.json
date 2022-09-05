@@ -1,0 +1,182 @@
+[
+	{
+		"id": 1,
+		"name": "Aeropuerto",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 2,
+		"name": "Barrio",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 3,
+		"name": "Campamento",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 4,
+		"name": "Colonia",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 5,
+		"name": "Condominio",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 6,
+		"name": "Congregación",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 7,
+		"name": "Conjunto habitacional",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 8,
+		"name": "Ejido",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 9,
+		"name": "Equipamiento",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 10,
+		"name": "Estación",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 11,
+		"name": "Exhacienda",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 12,
+		"name": "Finca",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 13,
+		"name": "Fraccionamiento",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 14,
+		"name": "Granja",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 15,
+		"name": "Hacienda",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 16,
+		"name": "Paraje",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 17,
+		"name": "Parque industrial",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 18,
+		"name": "Poblado comunal",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 19,
+		"name": "Pueblo",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 20,
+		"name": "Puerto",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 21,
+		"name": "Ranchería",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 22,
+		"name": "Rancho",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 23,
+		"name": "Residencial",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 24,
+		"name": "Unidad habitacional",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 25,
+		"name": "Villa",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 26,
+		"name": "Zona comercial",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 27,
+		"name": "Zona federal",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 28,
+		"name": "Zona industrial",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 29,
+		"name": "Zona militar",
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 30,
+		"name": "Zona naval",
+		"created_at": null,
+		"updated_at": null
+	}
+]
