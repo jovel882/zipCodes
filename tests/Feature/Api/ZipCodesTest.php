@@ -14,7 +14,7 @@ class ZipCodesTest extends TestCase
 {
     use RefreshDatabase;
 
-    private const SETTLEMENTDATATEST = '{"zip_code":"01210","locality":"Ciudad de M\u00e9xico","federal_entity":{"key":9,"name":"Ciudad de M\u00e9xico","code":null},"settlements":[{"key":82,"name":"Santa Fe","zone_type":"Urbano","settlement_type":{"name":"Pueblo"}}],"municipality":{"key":3,"name":"\u00c1lvaro Obreg\u00f3n"}}';
+    private const SETTLEMENTDATATEST = '{"zip_code":"01210","locality":"CIUDAD DE MEXICO","federal_entity":{"key":9,"name":"CIUDAD DE MEXICO","code":null},"settlements":[{"key":82,"name":"SANTA FE","zone_type":"URBANO","settlement_type":{"name":"Pueblo"}}],"municipality":{"key":3,"name":"ALVARO OBREGON"}}';
 
     protected $settlementModelTest = false;
 

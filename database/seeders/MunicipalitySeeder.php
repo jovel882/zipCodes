@@ -13,7 +13,7 @@ class MunicipalitySeeder extends Seeder
     public function run()
     {
         if (app()->env !== 'testing') {
-            DatabaseSeeder::loadData(Municipality::class, 'database/seeders/jsonData/municipalities.json');
+            DatabaseSeeder::loadData(Municipality::class, 'database/seeders/jsonData/municipalities' . (! env('USE_ORIGIN_DATA') ? '_Out' : '') . '.json');
         } else {
             Municipality::factory()
                 ->count(50)

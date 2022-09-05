@@ -117,7 +117,17 @@ Mi enfoque para dar solución al [reto](https://jobs.backbonesystems.io/challeng
 		<br/>
 
 		+ El API no entrega los caracteres en mayúsculas como en el de referencias.
-		
+
+		<br/>
+		<br/>
+
+		> ***:warning: NOTA: Luego de realizar la primera validación contra el BOT se evidencio que si requiere los textos en mayúsculas y sin acentos, se ajusto la Data para cumplir con el requerimiento.***
+
+		<br/>
+		<br/>
+
+		![ModeloBD.jpg](public/Readme/ErrorData.jpg)
+
 		<br/>
 		<br/>
 
@@ -371,6 +381,11 @@ Mi enfoque para dar solución al [reto](https://jobs.backbonesystems.io/challeng
 			<br/>
 
 			+ `GIT_BRANCH` (\*Requerido): Es el nombre de la rama del repo que se usara para levantar la solución de Laravel.
+
+			<br/>
+			<br/>
+
+			+ `USE_ORIGIN_DATA` (\*Requerido): Este campo puede ser definido como **"true"** que indica si se debe cargar la data mas fiel a origen o **"false"** para que por el contrario se tome la que fuerza las mayúsculas y quita los acentos.
 
 			<br/>
 			<br/>

@@ -13,7 +13,7 @@ class FederalEntitySeeder extends Seeder
     public function run()
     {
         if (app()->env !== 'testing') {
-            DatabaseSeeder::loadData(FederalEntity::class, 'database/seeders/jsonData/federal_entities.json');
+            DatabaseSeeder::loadData(FederalEntity::class, 'database/seeders/jsonData/federal_entities' . (! env('USE_ORIGIN_DATA') ? '_Out' : '') . '.json');
         } else {
             FederalEntity::factory()
                 ->count(5)
