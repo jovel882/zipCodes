@@ -13,7 +13,7 @@ class ZipCodeSeeder extends Seeder
     public function run()
     {
         if (app()->env !== 'testing') {
-            DatabaseSeeder::loadData(ZipCode::class, 'database/seeders/jsonData/zip_codes.json');
+            DatabaseSeeder::loadData(ZipCode::class, 'database/seeders/jsonData/zip_codes' . (! env('USE_ORIGIN_DATA') ? '_Out' : '') . '.json');
         } else {
             ZipCode::factory()
                 ->count(50)

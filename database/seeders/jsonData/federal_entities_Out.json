@@ -1,0 +1,258 @@
+[
+	{
+		"id": 1,
+		"key": 1,
+		"name": "AGUASCALIENTES",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 2,
+		"key": 2,
+		"name": "BAJA CALIFORNIA",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 3,
+		"key": 3,
+		"name": "BAJA CALIFORNIA SUR",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 4,
+		"key": 4,
+		"name": "CAMPECHE",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 5,
+		"key": 7,
+		"name": "CHIAPAS",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 6,
+		"key": 8,
+		"name": "CHIHUAHUA",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 7,
+		"key": 9,
+		"name": "CIUDAD DE MEXICO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 8,
+		"key": 5,
+		"name": "COAHUILA DE ZARAGOZA",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 9,
+		"key": 6,
+		"name": "COLIMA",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 10,
+		"key": 10,
+		"name": "DURANGO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 11,
+		"key": 11,
+		"name": "GUANAJUATO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 12,
+		"key": 12,
+		"name": "GUERRERO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 13,
+		"key": 13,
+		"name": "HIDALGO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 14,
+		"key": 14,
+		"name": "JALISCO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 15,
+		"key": 15,
+		"name": "MEXICO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 16,
+		"key": 16,
+		"name": "MICHOACAN DE OCAMPO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 17,
+		"key": 17,
+		"name": "MORELOS",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 18,
+		"key": 18,
+		"name": "NAYARIT",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 19,
+		"key": 19,
+		"name": "NUEVO LEON",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 20,
+		"key": 20,
+		"name": "OAXACA",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 21,
+		"key": 21,
+		"name": "PUEBLA",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 22,
+		"key": 22,
+		"name": "QUERETARO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 23,
+		"key": 23,
+		"name": "QUINTANA ROO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 24,
+		"key": 24,
+		"name": "SAN LUIS POTOSI",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 25,
+		"key": 25,
+		"name": "SINALOA",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 26,
+		"key": 26,
+		"name": "SONORA",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 27,
+		"key": 27,
+		"name": "TABASCO",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 28,
+		"key": 28,
+		"name": "TAMAULIPAS",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 29,
+		"key": 29,
+		"name": "TLAXCALA",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 30,
+		"key": 30,
+		"name": "VERACRUZ DE IGNACIO DE LA LLAVE",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 31,
+		"key": 31,
+		"name": "YUCATAN",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	},
+	{
+		"id": 32,
+		"key": 32,
+		"name": "ZACATECAS",
+		"code": null,
+		"created_at": null,
+		"updated_at": null
+	}
+]
