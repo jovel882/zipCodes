@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');            
             $table->timestamps();
         });
-        \DB::statement("ALTER TABLE `municipalities` ADD `key` SMALLINT(3) NOT NULL AFTER `id`");
+        \DB::statement("ALTER TABLE `municipalities` ADD `key` SMALLINT(3) NOT NULL " . ((app()->env != "testing") ? 'AFTER `id`' : ''));
     }
 
     /**

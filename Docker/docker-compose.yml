@@ -1,0 +1,41 @@
+version: '3'
+services:
+  proxy:
+    image: jwilder/nginx-proxy
+    container_name: proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    restart: always
+    privileged: true
+    networks:
+      - local_containers      
+  mariadb:
+    image: mariadb:10.9.2
+    container_name: ${BD_CONTAINER_NAME}
+    ports:
+      - "127.0.0.1:${PORT_BD}:3306"
+    restart: always
+    env_file: 
+      - .env
+    networks:
+      - local_containers
+  zip_codes:
+    image: jovel882/zip-code:1.0
+    container_name: zip_codes
+    environment:
+      - VIRTUAL_HOST=jovelba.ml
+      - SKIP_COMPOSER=1    
+    env_file: 
+      - .env
+    networks:
+      - local_containers
+    restart: always
+    depends_on:
+      - proxy
+      - mariadb
+networks:
+  local_containers:
+    name: local_containers
