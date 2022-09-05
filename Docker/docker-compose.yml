@@ -26,7 +26,8 @@ services:
     image: jovel882/zip-code:1.0
     container_name: zip_codes
     environment:
-      - VIRTUAL_HOST=jovelba.ml    
+      - VIRTUAL_HOST=jovelba.ml
+      - SKIP_COMPOSER=1    
     env_file: 
       - .env
     networks:
