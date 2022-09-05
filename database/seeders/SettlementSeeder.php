@@ -13,7 +13,7 @@ class SettlementSeeder extends Seeder
     public function run()
     {
         if (app()->env !== 'testing') {
-            DatabaseSeeder::loadData(Settlement::class, 'database/seeders/jsonData/settlements.json');
+            DatabaseSeeder::loadData(Settlement::class, 'database/seeders/jsonData/settlements' . (! env('USE_ORIGIN_DATA') ? '_Out' : '') . '.json');
         } else {
             Settlement::factory()
                 ->count(50)
